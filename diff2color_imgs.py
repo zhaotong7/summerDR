@@ -24,3 +24,4 @@ for i in range(0,rows):
 # handle noise
 kernel = np.ones((3,3),np.uint8)
 opening = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
+cv2.imwrite('res.png', opening)
